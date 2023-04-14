@@ -9,4 +9,5 @@ def solution(x: np.array, y: np.array) -> bool:
     pvalue = KSample(indep_test='Dcorr').test(x, y).pvalue
     if pvalue < significance_level:
         return True
-    return False
+    else:
+        return False
